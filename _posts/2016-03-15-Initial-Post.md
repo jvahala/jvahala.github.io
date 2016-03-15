@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Hank Quinlan, Horrible Cop, Launches Site"
-date: 2014-04-30
+title: "Initial Post"
+date: 2016-03-15
 ---
 
 Using tutorial supplied by [Hank Quinlan](http://jmcglone.com/guides/github-pages/).
