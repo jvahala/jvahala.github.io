@@ -3,7 +3,6 @@ layout: post
 title: "Allergies vs. Chocolate"
 date: 2016-05-06
 ---
-#Allergies vs. Chocolate
 I have a theory. I would like to test this theory. Please help. 
 
 ## Situation:
