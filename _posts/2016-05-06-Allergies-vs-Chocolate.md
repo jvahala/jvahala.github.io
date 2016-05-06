@@ -4,13 +4,13 @@ title: "Allergies vs. Chocolate"
 date: 2016-03-15
 ---
 I have a theory. I would like to test this theory. Please help. 
-## Situation: 
+## Situation: ##
 
 Assume you are picking a new life. You have all the experience from your previous life (i.e. your current life, 
 assuming you are not of the undead). Your new life will be similar to your current life in all ways but one. You must 
 select whether to have allergies and enjoy chocolate, or to have zero allergies but not enjoy chocolate. 
 
-#### Allergy stipulations: 
+#### Allergy stipulations: ####
 
 Your new allergy level will be determined by a uniform random variable from mild to severe, where this completely non-mathy 
 scale is defined in Figure 1, with your expected allergy level as mild-severe. Severe means you should not get anywhere near
@@ -22,7 +22,7 @@ pedantic: [The Truth](http://www.nyallergy.com/chocolate-allergy.php)), but I'll
 it will be dependent on your size. Here's a handy calculator to show what would happen to you if you were a dog who ate chocolate: 
 [Doggie Choco-Calculator](http://www.petmd.com/dog/chocolate-toxicity). That would be a bummer. 
 
-#### Chocolate stipulations:
+#### Chocolate stipulations: ####
 
 If you choose to be allergy-free but dislike chocolate, then this means you do not enjoy any type of chocolate and includes 
 notes of chocolate found in your favorite stouts and coffees or other delicacies. If it's described as chocolate anything, you
