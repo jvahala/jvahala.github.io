@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Allergies vs. Chocolate"
-date: 2016-03-15
+date: 2016-05-06
 ---
+#Allergies vs. Chocolate
 I have a theory. I would like to test this theory. Please help. 
 
 ## Situation:
@@ -13,8 +14,8 @@ Assume you are picking a new life. You have all the experience from your previou
 
 Your new allergy level will be determined by a uniform random variable from mild to severe, where this completely non-mathy 
 scale is defined in Figure 1, with your expected allergy level as mild-severe. Severe means you should not get anywhere near
-your allergen (for example, if one severe allergen were peanuts, then you could be killed by peanuts). You are not limited to a single allergen, but the effect of all your allergens and their random severities determine how severe your allergies are rated. See Figure 2 for the probability distribution of having a certain level of allergies. There is a small chance that your allergen is something often found in chocolate (friends who say they are allergic to chocolate are lying fools, don't like chocolate, or aren't pedantic: [The Truth](http://www.nyallergy.com/chocolate-allergy.php)), but I'll be nice and say your allergy would be similar to how dogs are affected by chocolate. That is, it will be dependent on your size. Here's a handy calculator to show what would happen to you if you were a dog who ate chocolate: 
-[Doggie Choco-Calculator](http://www.petmd.com/dog/chocolate-toxicity). That would be a bummer. 
+your allergen (for example, if one severe allergen were peanuts, then you could be killed by peanuts). You are not limited to a single allergen, but the effect of all your allergens and their random severities determine how severe your allergies are rated. See Figure 2 for the probability distribution of having a certain level of allergies. There is a small chance that your allergen is something often found in chocolate (friends who say they are allergic to chocolate are lying fools, don't like chocolate, or aren't [pedantic](http://www.nyallergy.com/chocolate-allergy.php)), but I'll be nice and say your allergy would be similar to how dogs are affected by chocolate. That is, it will be dependent on your size. Here's a handy calculator to show what would happen to you if you were a dog who ate chocolate: 
+[dog-simulator](http://www.petmd.com/dog/chocolate-toxicity). That would be a bummer. 
 
 ### Chocolate stipulations:
 
