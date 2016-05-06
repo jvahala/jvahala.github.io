@@ -5,13 +5,13 @@ date: 2016-05-06
 ---
 I have a theory. I would like to test this theory. Please help. 
 
-## Situation:
+# Situation:
 
 Assume you are picking a new life. You have all the experience from your previous life (i.e. your current life, assuming you are not of the undead). Your new life will be similar to your current life in all ways but one: you must select whether to *(a)* have allergies and enjoy chocolate, or to *(b)* have zero allergies but not enjoy chocolate. 
 
 *VOTING BLOCK HERE*
 
-### Allergy stipulations:
+## Allergy stipulations:
 
 Your new allergy level will be determined by a uniform random variable from mild to severe, where this completely non-mathy 
 scale is defined in Figure 1, with your expected allergy level as mild-severe. Severe means you should not get anywhere near
@@ -29,7 +29,7 @@ There is a small chance that your allergen is something often found in chocolate
 *FIGURE 3 HERE*
 
 
-### Chocolate stipulations:
+## Chocolate stipulations:
 
 If you choose to be allergy-free but dislike chocolate, then this means you do not enjoy any type of chocolate and includes 
 notes of chocolate found in your favorite stouts and coffees or other delicacies. If it's described as chocolate anything, you probably aren't allowed to like it in this scenario. I'm unclear on whether or not white chocolate counts, so feel free to tell me it does or does not in the queries below. Here's an artists rendition (Figure 4) of what it may be like to dislike chocolate but be allergy-free. 
