@@ -4,8 +4,6 @@ title: "Beautiful TMUX"
 date: 2016-10-29
 ---
 
-# Beautiful TMUX
-
 ## Discovery of tmux 
 
 In receiving a demo of a labmate's [Mico-arm](http://www.robotnik.eu/robotics-arms/kinova-mico-arm/) [ROS](http://wiki.ros.org/Robots/MICO)-based control code, he showed me the nifty tool [`tmux`](https://tmux.github.io/) that allows for quick and easy movement between terminal windows. It was beautiful, and I've since learned some of the powers it holds. 
