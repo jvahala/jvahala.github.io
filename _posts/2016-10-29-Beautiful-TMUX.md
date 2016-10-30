@@ -18,41 +18,47 @@ In this post, I'll go through some initialization and troubleshooting fixes I we
 # Installation
 
 Using Mac OSX El Capitan with [Homebrew](http://brew.sh/), do: 
+
 ```bash
 $ brew install tmux
 ```
 
 ## Basics of `tmux` 
 
-`tmux` allows us to develop personalized environments with multiple windows and each window separated into multiple panes. Sufficiently using `tmux` involves the mastery of only a few commands (Note : 
+`tmux` allows us to develop personalized environments with multiple windows and each window separated into multiple panes. Sufficiently using `tmux` involves the mastery of only a few commands: 
 
 ### Shortcut combo
 `tmux` includes a handy shortcut that defaults to Ctrl+b. I have remapped this in my config file (detailed below) to be Ctrl+a. I have also [remapped](https://coderwall.com/p/cq_lkg/remapping-caps-lock-key-to-something-more-natural-on-mac-os-x) the Capslock key to act as Ctrl to make Ctrl+a super simple to combo. 
 
 ### Starting a new session
 Create a new tmux instance named 'session-name'. Using only `tmux new` will work as well, but is not recommended as it gives unique number identifiers to the sessions, which isn't all that helpful. 
+
 ```bash
 $ tmux new -s <session-name>
 ```
 
 ### Check on active sessions
 To see which sessions exist, 
+
 ```bash
 $ tmux ls
 ```
 
 ### Attaching to existing sessions
 To go to your last session, 
+
 ```bash
 $ tmux a
 ```
 To go to a specific session, 
+
 ```bash
 $ tmux a -t <session-name>
 ```
 
 ### Detaching from sessions 
 To detach from the current session, 
+
 ```bash
 $ tmux detach
 ```
@@ -60,10 +66,13 @@ or simply, `Ctrl+a d`.
 
 ### Killing sessions 
 To kill the current session, 
+
 ```bash
 $ tmux kill-session
 ```
+
 To kill all sessions, 
+
 ```bash
 $ killall tmux
 ```
@@ -97,20 +106,25 @@ Then, go to your downloads, unzip the file, go to the schemes folder, right-clic
 
 ### Step 2. Open up and play with your config file
 Open .tmux.conf from your home directory using your favorite text editor ([SublimeText3](https://www.sublimetext.com/) in this case), 
+
 ```bash
 $ subl ~/.tmux.conf
 ```
 There's probably some default stuff there. Without any remorse, delete it all and cackle. This config file adds a nice status bar with your id, ip, window names, session name, and time at the bottom along with some [colors](http://superuser.com/questions/285381/how-does-the-tmux-color-palette-work) that pleasantly go with my chalkboard default terminal theme. 
 
 Of everything here, the most important line is: 
+
 ```
 # allow access 
 set-option -g default-command "reattach-to-user-namespace -l bash"
 ```
+
 It requires that you first install `reattach-to-user-namespace`: 
+
 ```bash
 $ brew install reattach-to-user-namespace
 ```
+
 One problem I had with `tmux` is that it wouldn't allow me to open up files or folders using the `subl` command. This deals with `tmux` acting separate from the typical terminal bash shell ([mostly-relevant-to-this-issue](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard)). This line fixes this issue (make sure to ```$ tmux kill-session``` and reopen your terminals before complaining about it not working). 
 
 There's way more stuff to do with the .tmux.conf file, but this will be a nice, simple starting place. 
