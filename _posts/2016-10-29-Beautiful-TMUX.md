@@ -5,52 +5,113 @@ date: 2016-10-29
 ---
 # Discovery of tmux 
 
-In receiving a demo of a labmate's [Mico-arm](http://www.robotnik.eu/robotics-arms/kinova-mico-arm/) [ROS](http://wiki.ros.org/Robots/MICO)-based control code, he showed me the nifty tool [tmux](https://tmux.github.io/) that allows for quick and easy movement between terminal windows. It was beautiful, and I've since learned some of the powers it holds. 
+In receiving a demo of a labmate's [Mico-arm](http://www.robotnik.eu/robotics-arms/kinova-mico-arm/) [ROS](http://wiki.ros.org/Robots/MICO)-based control code, he showed me the nifty tool [`tmux`](https://tmux.github.io/) that allows for quick and easy movement between terminal windows. It was beautiful, and I've since learned some of the powers it holds. 
 
-## What is tmux? 
+## What is `tmux`? 
 
 Tmux allows for us to quickly attach and detach to terminal sessions that can be project/contextually named. Thus, we can be working on several projects - like a homebrewing recipe generator, a human-robot-collaboration user experience improvement project, and a ranking project - without having three unique terminals running with important and easy-but-still-takes-effort-to-initialize python instances. Also, we can make it pretty. 
 
 *image of pretty* 
 
-In this post, I'll go through some initialization and troubleshooting fixes I went through to finally truly enjoy playing with the command line. Thanks to [Daniel Miessler](https://danielmiessler.com/study/tmux/#gs.gLmbnDs) and [Ham Vocke](http://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/) for helping me get started. See their posts for more reasons to use tmux over alternatives. 
+In this post, I'll go through some initialization and troubleshooting fixes I went through to finally truly enjoy playing with the command line. Thanks to [Daniel Miessler](https://danielmiessler.com/study/tmux/#gs.gLmbnDs) and [Ham Vocke](http://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/) for helping me get started. See their posts for more reasons to use `tmux` over alternatives. 
 
-## Getting started with tmux
+## Installation
 
+Using Mac OSX El Capitan with [Homebrew](http://brew.sh/), do: 
+
+1. Install tmux 
 ```bash
 $ brew install tmux
 ```
+## Basics of `tmux` 
 
+`tmux` allows us to develop personalized environments with multiple windows and each window separated into multiple panes. Sufficiently using `tmux` involves the mastery of only a few commands (Note : 
 
-I have a theory. I would like to test this theory. Please help. 
+- Shortcut combo
+`tmux` includes a handy shortcut that defaults to Ctrl+b. I have remapped this in my config file (detailed below) to be Ctrl+a. I have also [remapped](https://coderwall.com/p/cq_lkg/remapping-caps-lock-key-to-something-more-natural-on-mac-os-x) the Capslock key to act as Ctrl to make Ctrl+a super simple to combo. 
 
-# Situation:
+- Starting a new session
+Create a new tmux instance named 'session-name'. Using only `tmux new` will work as well, but is not recommended as it gives unique number identifiers to the sessions, which isn't all that helpful. 
+```bash
+$ tmux new -s <session-name>
+```
 
-Assume you are picking a new life. You have all the experience from your previous life (i.e. your current life, assuming you are not of the undead). Your new life will be similar to your current life in all ways but one: you must select whether to *(a)* have allergies and enjoy chocolate, or to *(b)* have zero allergies but not enjoy chocolate. 
+- Check on active sessions
+To see which sessions exist, 
+```bash
+$ tmux ls
+```
 
-*VOTING BLOCK HERE*
+- Attaching to existing sessions
+To go to your last session, 
+```bash
+$ tmux a
+```
+To go to a specific session, 
+```bash
+$ tmux a -t <session-name>
+```
 
-## Allergy stipulations:
+- Detaching from sessions 
+To detach from the current session, 
+```bash
+$ tmux detach
+```
+or simply, `Ctrl+a d`. 
 
-Your new allergy level will be determined by a uniform random variable from mild to severe, where this completely non-mathy 
-scale is defined in Figure 1, with your expected allergy level as mild-severe. Severe means you should not get anywhere near
-your allergen (for example, if one severe allergen were peanuts, then you could be killed by peanuts). 
+- Killing sessions 
+To kill the current session, 
+```bash
+$ tmux kill-session
+```
+To kill all sessions, 
+```bash
+$ killall tmux
+```
 
-*FIGURE 1 HERE*
+- Adding and renaming windows 
+To add a new window, use `Ctrl+a c`.
+To rename the current window, use `Ctrl+a ,`. 
 
-You are not limited to a single allergen, but the effect of all your allergens and their random severities determine how severe your allergies are rated. See Figure 2 for the probability distribution of having a certain level of allergies.
+- Adding panes to windows
+To add horizontal panes, use `Ctrl+a -`.
+To add vertical panies, use `Ctrl+a |`. 
+(I remapped theses in my .tmux.conf from the respective defaults `Ctrl+a %` and `Ctrl+a "`) 
 
-*FIGURE 2 HERE*
+- Reload your config file 
+To reload your config file, use `Ctrl+a r`. (This is a functionality added in .tmux.conf)
 
-There is a small chance that your allergen is something often found in chocolate (friends who say they are allergic to chocolate are lying fools, don't like chocolate, or aren't [pedantic](http://www.nyallergy.com/chocolate-allergy.php)), but I'll be nice and say your allergy would be similar to how dogs are affected by chocolate. That is, it will be dependent on your size. Here's a handy calculator to show what would happen to you if you were a dog who ate chocolate: 
-[dog-simulator](http://www.petmd.com/dog/chocolate-toxicity). That would be a bummer. Here's an artist's rendition (Figure 3) of what it may be like to have the expected level of allergies, but enjoy chocolate. 
+## Prettifying your workspace
 
-*FIGURE 3 HERE*
+### Step 1. Choose a nice Terminal color scheme
+Open a terminal and go to Preferences
 
+*preferences image* 
 
-## Chocolate stipulations:
+Which will open this window
 
-If you choose to be allergy-free but dislike chocolate, then this means you do not enjoy any type of chocolate and includes 
-notes of chocolate found in your favorite stouts and coffees or other delicacies. If it's described as chocolate anything, you probably aren't allowed to like it in this scenario. I'm unclear on whether or not white chocolate counts, so feel free to tell me it does or does not in the queries below. Here's an artists rendition (Figure 4) of what it may be like to dislike chocolate but be allergy-free. 
+*preferences window image*
 
-*FIGURE 4 HERE*
+If you already have some nice themes installed, awesome. Otherwise, check out these premade [themes](https://github.com/lysyi3m/osx-terminal-themes). To install them, click the clone or download button and download as zip. 
+*clone or download image*
+Then, go to your downloads, unzip the file, go to the schemes folder, right-click+open the theme you've eyed from examples shown on the github site and pass through the security warning to open a new terminal. Then go back to preferences and make it default. 
+
+### Step 2. Open up and play with your config file
+Open .tmux.conf from your home directory using your favorite text editor ([SublimeText3](https://www.sublimetext.com/) in this case), 
+```bash
+$ subl ~/.tmux.conf
+```
+There's probably some default stuff there. Without any remorse, delete it all and cackle. This config file adds a nice status bar with your id, ip, window names, session name, and time at the bottom along with some [colors](http://superuser.com/questions/285381/how-does-the-tmux-color-palette-work) that pleasantly go with my chalkboard default terminal theme. 
+
+Of everything here, the most important line is: 
+```
+# allow access 
+set-option -g default-command "reattach-to-user-namespace -l bash"
+```
+It requires that you first install `reattach-to-user-namespace`: 
+```bash
+$ brew install reattach-to-user-namespace
+```
+One problem I had with `tmux` is that it wouldn't allow me to open up files or folders using the `subl` command. This deals with `tmux` acting separate from the typical terminal bash shell ([mostly-relevant-to-this-issue](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard)). This line fixes this issue (make sure to ```$ tmux kill-session``` and reopen your terminals before complaining about it not working). 
+
+There's way more stuff to do with the .tmux.conf file, but this will be a nice, simple starting place. 
