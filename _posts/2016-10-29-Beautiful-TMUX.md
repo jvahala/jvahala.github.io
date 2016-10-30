@@ -19,7 +19,7 @@ In this post, I'll go through some initialization and troubleshooting fixes I we
 
 Using Mac OSX El Capitan with [Homebrew](http://brew.sh/), do: 
 
-1. Install tmux 
+### Install tmux 
 ```bash
 $ brew install tmux
 ```
@@ -27,22 +27,22 @@ $ brew install tmux
 
 `tmux` allows us to develop personalized environments with multiple windows and each window separated into multiple panes. Sufficiently using `tmux` involves the mastery of only a few commands (Note : 
 
-- Shortcut combo
+### Shortcut combo
 `tmux` includes a handy shortcut that defaults to Ctrl+b. I have remapped this in my config file (detailed below) to be Ctrl+a. I have also [remapped](https://coderwall.com/p/cq_lkg/remapping-caps-lock-key-to-something-more-natural-on-mac-os-x) the Capslock key to act as Ctrl to make Ctrl+a super simple to combo. 
 
-- Starting a new session
+### Starting a new session
 Create a new tmux instance named 'session-name'. Using only `tmux new` will work as well, but is not recommended as it gives unique number identifiers to the sessions, which isn't all that helpful. 
 ```bash
 $ tmux new -s <session-name>
 ```
 
-- Check on active sessions
+### Check on active sessions
 To see which sessions exist, 
 ```bash
 $ tmux ls
 ```
 
-- Attaching to existing sessions
+### Attaching to existing sessions
 To go to your last session, 
 ```bash
 $ tmux a
@@ -52,14 +52,14 @@ To go to a specific session,
 $ tmux a -t <session-name>
 ```
 
-- Detaching from sessions 
+### Detaching from sessions 
 To detach from the current session, 
 ```bash
 $ tmux detach
 ```
 or simply, `Ctrl+a d`. 
 
-- Killing sessions 
+### Killing sessions 
 To kill the current session, 
 ```bash
 $ tmux kill-session
@@ -69,16 +69,16 @@ To kill all sessions,
 $ killall tmux
 ```
 
-- Adding and renaming windows 
+### Adding and renaming windows 
 To add a new window, use `Ctrl+a c`.
 To rename the current window, use `Ctrl+a ,`. 
 
-- Adding panes to windows
+### Adding panes to windows
 To add horizontal panes, use `Ctrl+a -`.
 To add vertical panies, use `Ctrl+a |`. 
 (I remapped theses in my .tmux.conf from the respective defaults `Ctrl+a %` and `Ctrl+a "`) 
 
-- Reload your config file 
+### Reload your config file 
 To reload your config file, use `Ctrl+a r`. (This is a functionality added in .tmux.conf)
 
 ## Prettifying your workspace
