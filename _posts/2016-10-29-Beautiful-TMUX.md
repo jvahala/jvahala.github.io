@@ -7,7 +7,7 @@ date: 2016-10-29
 
 In receiving a demo of a labmate's [Mico-arm](http://www.robotnik.eu/robotics-arms/kinova-mico-arm/) [ROS](http://wiki.ros.org/Robots/MICO)-based control code, he showed me the nifty tool [`tmux`](https://tmux.github.io/) that allows for quick and easy movement between terminal windows. It was beautiful, and I've since learned some of the powers it holds. 
 
-## What is `tmux`? 
+# What is `tmux`? 
 
 Tmux allows for us to quickly attach and detach to terminal sessions that can be project/contextually named. Thus, we can be working on several projects - like a homebrewing recipe generator, a human-robot-collaboration user experience improvement project, and a ranking project - without having three unique terminals running with important and easy-but-still-takes-effort-to-initialize python instances. Also, we can make it pretty. 
 
@@ -15,14 +15,13 @@ Tmux allows for us to quickly attach and detach to terminal sessions that can be
 
 In this post, I'll go through some initialization and troubleshooting fixes I went through to finally truly enjoy playing with the command line. Thanks to [Daniel Miessler](https://danielmiessler.com/study/tmux/#gs.gLmbnDs) and [Ham Vocke](http://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/) for helping me get started. See their posts for more reasons to use `tmux` over alternatives. 
 
-## Installation
+# Installation
 
 Using Mac OSX El Capitan with [Homebrew](http://brew.sh/), do: 
-
-### Install tmux 
 ```bash
 $ brew install tmux
 ```
+
 ## Basics of `tmux` 
 
 `tmux` allows us to develop personalized environments with multiple windows and each window separated into multiple panes. Sufficiently using `tmux` involves the mastery of only a few commands (Note : 
@@ -81,7 +80,7 @@ To add vertical panies, use `Ctrl+a |`.
 ### Reload your config file 
 To reload your config file, use `Ctrl+a r`. (This is a functionality added in .tmux.conf)
 
-## Prettifying your workspace
+# Prettifying your workspace
 
 ### Step 1. Choose a nice Terminal color scheme
 Open a terminal and go to Preferences
