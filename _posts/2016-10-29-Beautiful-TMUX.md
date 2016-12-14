@@ -104,10 +104,10 @@ Open a terminal and go to Preferences
 
 Which will open this window
 
-![alt text][Profile-img =200x]
+![alt text][Profile-img]{:width="400px"}
 
 If you already have some nice themes installed, awesome. Otherwise, check out these premade [themes](https://github.com/lysyi3m/osx-terminal-themes). To install them, click the clone or download button and download as zip. 
-![alt text][Themes-img =200x]
+![alt text][Themes-img]{:width="400px"}
 Then, go to your downloads, unzip the file, go to the schemes folder, right-click+open the theme you've eyed from examples shown on the github site and pass through the security warning to open a new terminal. Then go back to preferences and make it default. 
 
 ### Step 2. Open up and play with your config file
