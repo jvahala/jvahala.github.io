@@ -4,10 +4,9 @@ title: "Beautiful TMUX"
 date: 2016-10-29
 ---
 
-[Preferences-img]: https://github.com/jvahala/jvahala.github.io/blob/master/_posts/images/20161029/tmux-terminal-preferences.png "Preferences"
-[Themes-img]: https://github.com/jvahala/jvahala.github.io/blob/master/_posts/images/20161029/tmux-download-terminal-themes.png "Themes"
-[Profile-img]: https://github.com/jvahala/jvahala.github.io/blob/master/_posts/images/20161029/tmux-terminal-profile-screen.png "Profile"
-
+[Preferences-img]: https://github.com/jvahala/jvahala.github.io/blob/master/_posts/images/20161029/tmux-terminal-preferences.png?raw=true "Preferences"
+[Themes-img]: https://github.com/jvahala/jvahala.github.io/blob/master/_posts/images/20161029/tmux-download-terminal-themes.png?raw=true "Themes"
+[Profile-img]: https://github.com/jvahala/jvahala.github.io/blob/master/_posts/images/20161029/tmux-terminal-profile-screen.png?raw=true "Profile"
 
 ## Discovery of tmux 
 
