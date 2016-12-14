@@ -4,6 +4,11 @@ title: "Beautiful TMUX"
 date: 2016-10-29
 ---
 
+[Preferences-img]: https://github.com/jvahala/jvahala.github.io/tree/master/_posts/images/20161029/tmux-terminal-preferences.png "Preferences"
+[Themes-img]: https://github.com/jvahala/jvahala.github.io/tree/master/_posts/images/20161029/tmux-download-terminal-themes.png "Themes"
+[Profile-img]: https://github.com/jvahala/jvahala.github.io/tree/master/_posts/images/20161029/tmux-terminal-profile-screen.png "Profile"
+
+
 ## Discovery of tmux 
 
 In receiving a demo of a labmate's [Mico-arm](http://www.robotnik.eu/robotics-arms/kinova-mico-arm/) [ROS](http://wiki.ros.org/Robots/MICO)-based control code, he showed me the nifty tool [`tmux`](https://tmux.github.io/) that allows for quick and easy movement between terminal windows. It was beautiful, and I've since learned some of the powers it holds. 
@@ -95,14 +100,16 @@ To reload your config file, use `Ctrl+a r`. (This is a functionality added in .t
 ### Step 1. Choose a nice Terminal color scheme
 Open a terminal and go to Preferences
 
-*preferences image* 
+
+Reference-style: 
+![alt text][Preferences-img]
 
 Which will open this window
 
-*preferences window image*
+![alt text][Profile-img]
 
 If you already have some nice themes installed, awesome. Otherwise, check out these premade [themes](https://github.com/lysyi3m/osx-terminal-themes). To install them, click the clone or download button and download as zip. 
-*clone or download image*
+![alt text][Themes-img]
 Then, go to your downloads, unzip the file, go to the schemes folder, right-click+open the theme you've eyed from examples shown on the github site and pass through the security warning to open a new terminal. Then go back to preferences and make it default. 
 
 ### Step 2. Open up and play with your config file
