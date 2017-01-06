@@ -3,12 +3,12 @@ layout: post
 title: "Cruz Term Limits"
 date: 2016-10-29
 ---
-[House-Term-Dists] https://github.com/jvahala/jvahala.github.io/blob/master/_posts/images/20170106/term-distribution-house.png?raw=true "House Members Separated by Current Term Limits"
-[Senate-Term-Dists] https://github.com/jvahala/jvahala.github.io/blob/master/_posts/images/20170106/term-distribution-senate.png?raw=true "Senate Members Separated by Current Term Limits"
-[House-Ineligible-Counts] https://github.com/jvahala/jvahala.github.io/blob/master/_posts/images/20170106/count-ineligible-house.png?raw=true "House Members Ineligible for Re-Election Caused by Term Limits"
-[Senate-Ineligible-Counts]https://github.com/jvahala/jvahala.github.io/blob/master/_posts/images/20170106/count-ineligible-senate.png?raw=true "Senate Members Ineligible for Re-Election Caused by Term Limits"
-[House-Ineligible-Percents] https://github.com/jvahala/jvahala.github.io/blob/master/_posts/images/20170106/percent-ineligible-house.png?raw=true "Percentage of House Members Ineligible for Re-Election Caused by Term Limits"
-[Senate-Ineligible-Percents] https://github.com/jvahala/jvahala.github.io/blob/master/_posts/images/20170106/percent-ineligible-senate.png?raw=true "Percentage of Senate Members Ineligible for Re-Election Caused by Term Limits"
+[House-Term-Dists]: https://github.com/jvahala/jvahala.github.io/blob/master/_posts/images/20170106/term-distribution-house.png?raw=true "House Members Separated by Current Term Limits"
+[Senate-Term-Dists]: https://github.com/jvahala/jvahala.github.io/blob/master/_posts/images/20170106/term-distribution-senate.png?raw=true "Senate Members Separated by Current Term Limits"
+[House-Ineligible-Counts]: https://github.com/jvahala/jvahala.github.io/blob/master/_posts/images/20170106/count-ineligible-house.png?raw=true "House Members Ineligible for Re-Election Caused by Term Limits"
+[Senate-Ineligible-Counts]: https://github.com/jvahala/jvahala.github.io/blob/master/_posts/images/20170106/count-ineligible-senate.png?raw=true "Senate Members Ineligible for Re-Election Caused by Term Limits"
+[House-Ineligible-Percents]: https://github.com/jvahala/jvahala.github.io/blob/master/_posts/images/20170106/percent-ineligible-house.png?raw=true "Percentage of House Members Ineligible for Re-Election Caused by Term Limits"
+[Senate-Ineligible-Percents]: https://github.com/jvahala/jvahala.github.io/blob/master/_posts/images/20170106/percent-ineligible-senate.png?raw=true "Percentage of Senate Members Ineligible for Re-Election Caused by Term Limits"
 
 ## Ted Cruz and Term Limits
 
