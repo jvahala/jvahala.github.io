@@ -40,9 +40,11 @@ First, we look at the House.
 As a sanity check, we see that if a one-term limit were imposed, then 100% of Congress members would be ineligible for re-election. Woot. For the House, we see that at a three-term limit, Democrats lose ~80% of their members while Republicans lose ~70%. These numbers translate to 78 Republicans to 38 Democrats left standing from the first culling. Approximately a 2:1 ratio. It's an open question how much this ratio would matter, but I'd guess the 38 being so small (9% of the 435 members) would make the new members coming much more important. There wouldn't be a buffer for Democrats to take extra losses in the oncoming elections. The key for the Republicans is that the strong majority of their members in the House are in their early terms; the Democrats are better spread through the terms. 
 
 It seems like the Cruz house limit is almost a compromise with the Democrats. If Cruz's staff we're doing this kind of analysis, they'd know a better choice for Republicans would be something deeper in the terms for Congressmen. The differences between each percentage (`dem_percent - rep_percent`) are
+
 ```
 [0, 0, 11, 5, 19, 20, 15, 16, 17, 16, 15, 12, 11, 6, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 ```
+
 So the best choice for Cruz in terms of party politics would have been a five- or six-term limit for the House of Representatives. The next election cycle for Republicans would lose 19-20% fewer members than Democrats. Democrats would term limits more along 14-16 terms region to minimize their losses relative to Republicans at less than 6%. 
 
 ### Senate
@@ -52,9 +54,11 @@ Next, we look at the Senate.
 ![alt text][Senate-Ineligible-Percents]{:width="400px"}
 
 We see from the percentage plot that Cruz's proposed two-term limit would do nothing to the immediate ratio between Republicans and Democrats. Thus, there's no hit to Republicans or Democrats. But, if we look at the percent difference values (again, `dem_percent - rep_percent`), we have 
+
 ```
 [0, 0, -8, -11, -4, -9, -3, 2, 0, 0, 0]
 ```
+
 So Democrats would actually be better served by longer (once again) term limits than those proposed. Their ideal term limit seems to be four terms, which results in an 11% swing in their favor. Republicans would much prefer the proposed term limit. The two independents in the Senate (Bernie Sanders and Angus King) are pretty much screwed by term limits simply because they are so rare to begin with. 
 
 ## Future Work
