@@ -55,7 +55,7 @@ We see from the percentage plot that Cruz's proposed two-term limit would do not
 ```
 [0, 0, -8, -11, -4, -9, -3, 2, 0, 0, 0]
 ```
-So Democrats would actually be better served by longer (once again) term limits than those proposed. Their ideal term limit seems to be four terms, which results in an 11% swing in their favor. Republicans would much prefer the proposed term limit.
+So Democrats would actually be better served by longer (once again) term limits than those proposed. Their ideal term limit seems to be four terms, which results in an 11% swing in their favor. Republicans would much prefer the proposed term limit. The two independents in the Senate (Bernie Sanders and Angus King) are pretty much screwed by term limits simply because they are so rare to begin with. 
 
 ## Future Work
 
