@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Cruz Term Limits"
-date: 2016-10-29
+title: "Ted Cruz and Term Limits"
+date: 2017-01-06
 ---
 [House-Term-Dists]: https://github.com/jvahala/jvahala.github.io/blob/master/_posts/images/20170106/term-distribution-house.png?raw=true "House Members Separated by Current Term Limits"
 [Senate-Term-Dists]: https://github.com/jvahala/jvahala.github.io/blob/master/_posts/images/20170106/term-distribution-senate.png?raw=true "Senate Members Separated by Current Term Limits"
