@@ -20,8 +20,8 @@ This post looks into how the proposed term limits (three two-Year terms for Hous
 
 Using data collected with the [congress-legislators](https://github.com/unitedstates/congress-legislators) repo (specifically the `current-legislators.yaml` file), I plot how many House and Senate members are in their `n`-th term, visualized by party affiliation and by who would be ineligible for re-election if the Cruz term limit ammendment were implemented.
 
-![alt text][House-Term-Dists]{:width="200px"}
-![alt text][Senate-Term-Dists]{:width="200px"}
+![alt text][House-Term-Dists]{:width="400px"}
+![alt text][Senate-Term-Dists]{:width="400px"}
 
 Clearly a whole bunch of members would be out of a job. It's also interesting that there are so many first and second term congressmen. Without looking into any merits of the longtimers, it seems like those people must be there for a reason. Maybe term limits would only kick out those people who deserve to represent their consistuents? This is probably not a universal truth, but its worth thinking through.
 
@@ -31,10 +31,10 @@ It's hard to tell who wins most Cruz's choice of term limits, so we will need to
 
 Incumbents are known to have an [advantage](http://www.thisnation.com/question/016.html) in congressional elections due to name recognition, funding, and on-the-job training. Thus, if we got rid of a large group of perennial incumbents, the resulting free-for-all would be more even than the typical election. Opposing parties would have a greater chance to grab previously impossible seats. In order to show how various term limits affect each party, we look at how a certain term limit for the House or Senate chanes the actual number of members of each party as well as how it looks like in percentage terms. First, we look at the House. 
 
-![alt text][House-Ineligible-Counts]{:width="200px"}
-![alt text][Senate-Ineligible-Counts]{:width="200px"}
+![alt text][House-Ineligible-Counts]{:width="400px"}
+![alt text][House-Ineligible-Percents]{:width="400px"}
 
 Next, we look at the Senate.
 
-![alt text][House-Ineligible-Percents]{:width="200px"}
-![alt text][Senate-Ineligible-Percents]{:width="200px"}
+![alt text][Senate-Ineligible-Counts]{:width="400px"}
+![alt text][Senate-Ineligible-Percents]{:width="400px"}
