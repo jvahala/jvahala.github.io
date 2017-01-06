@@ -25,16 +25,40 @@ Using data collected with the [congress-legislators](https://github.com/unitedst
 
 Clearly a whole bunch of members would be out of a job. It's also interesting that there are so many first and second term congressmen. Without looking into any merits of the longtimers, it seems like those people must be there for a reason. Maybe term limits would only kick out those people who deserve to represent their consistuents? This is probably not a universal truth, but its worth thinking through.
 
-It's hard to tell who wins most Cruz's choice of term limits, so we will need to make it more clear. 
+Also, the House Republicans have far more second term members than Democrats, and the House Democrats have far more third term members than Republicans. If Cruz's three-term limit were imposed, then it seems like Republicans would have the heavy advantage in the new contests. We will see if this guess holds up to further investigation.
 
 ## Newly Ineligible Members
 
-Incumbents are known to have an [advantage](http://www.thisnation.com/question/016.html) in congressional elections due to name recognition, funding, and on-the-job training. Thus, if we got rid of a large group of perennial incumbents, the resulting free-for-all would be more even than the typical election. Opposing parties would have a greater chance to grab previously impossible seats. In order to show how various term limits affect each party, we look at how a certain term limit for the House or Senate chanes the actual number of members of each party as well as how it looks like in percentage terms. First, we look at the House. 
+Incumbents are known to have an [advantage](http://www.thisnation.com/question/016.html) in congressional elections due to name recognition, funding, and on-the-job training. Thus, if we got rid of a large group of perennial incumbents, the resulting free-for-all would be more even than the typical election. Opposing parties would have a greater chance to grab previously impossible seats. In order to show how various term limits affect each party, we look at how a certain term limit for the House or Senate chanes the actual number of members of each party as well as how it looks like in percentage terms. 
+
+### House of Representatives
+First, we look at the House. 
 
 ![alt text][House-Ineligible-Counts]{:width="400px"}
 ![alt text][House-Ineligible-Percents]{:width="400px"}
 
+As a sanity check, we see that if a one-term limit were imposed, then 100% of Congress members would be ineligible for re-election. Woot. For the House, we see that at a three-term limit, Democrats lose ~80% of their members while Republicans lose ~70%. These numbers translate to 78 Republicans to 38 Democrats left standing from the first culling. Approximately a 2:1 ratio. It's an open question how much this ratio would matter, but I'd guess the 38 being so small (9% of the 435 members) would make the new members coming much more important. There wouldn't be a buffer for Democrats to take extra losses in the oncoming elections. The key for the Republicans is that the strong majority of their members in the House are in their early terms; the Democrats are better spread through the terms. 
+
+It seems like the Cruz house limit is almost a compromise with the Democrats. If Cruz's staff we're doing this kind of analysis, they'd know a better choice for Republicans would be something deeper in the terms for Congressmen. The differences between each percentage (`dem_percent - rep_percent`) are
+```
+[0, 0, 11, 5, 19, 20, 15, 16, 17, 16, 15, 12, 11, 6, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+```
+So the best choice for Cruz in terms of party politics would have been a five- or six-term limit for the House of Representatives. The next election cycle for Republicans would lose 19-20% fewer members than Democrats. Democrats would term limits more along 14-16 terms region to minimize their losses relative to Republicans at less than 6%. 
+
+### Senate
 Next, we look at the Senate.
 
 ![alt text][Senate-Ineligible-Counts]{:width="400px"}
 ![alt text][Senate-Ineligible-Percents]{:width="400px"}
+
+We see from the percentage plot that Cruz's proposed two-term limit would do nothing to the immediate ratio between Republicans and Democrats. Thus, there's no hit to Republicans or Democrats. But, if we look at the percent difference values (again, `dem_percent - rep_percent`), we have 
+```
+[0, 0, -8, -11, -4, -9, -3, 2, 0, 0, 0]
+```
+So Democrats would actually be better served by longer (once again) term limits than those proposed. Their ideal term limit seems to be four terms, which results in an 11% swing in their favor. Republicans would much prefer the proposed term limit.
+
+## Future Work
+
+Later I plan to look into each district that would be lost with Cruz's term limits and see the margin of victory of the incumbent in each. From this, I'll infer how the district leans party-wise and whether its drawn well enough to fend off the opposing party. I'll then make a prediction of how the shift of power would change under various term limit programs. 
+
+I also would like to add more research and links about how term limits have worked or failed in the past, so I (and others) can make educated decisions about supporting such an ammendment to the constitution (with our votes for congress members). 
