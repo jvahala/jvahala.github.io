@@ -14,7 +14,7 @@ date: 2017-01-06
 
 Ted Cruz recently [proposed](https://www.cruz.senate.gov/?p=press_release&id=2940) a term limit ammendment to the constitution. He reasoned, "D.C. is broken. The American people resoundingly agreed on Election Day, and President-elect Donald Trump has committed to putting government back to work for the American people. It is well past time to put an end to the cronyism and deceit that has transformed Washington into a graveyard of good intentions." However, due to Mr. Cruz's well-known far-right stances, I questioned if this was sincere and not a means to knock out significantly more Democrats than Republicans in upcoming elections. 
 
-This post looks into how the proposed term limits (three two-Year terms for House of Representatives members and two six-year terms for Senate members) would alter the power dynamic after the current members of congress are next up for re-election. Later, I'll update this post with the optimal term limits for shifting the balance of power in both the Democratic and Republican directions. 
+This post looks into how the proposed term limits (three two-year terms for House of Representatives members and two six-year terms for Senate members) would alter the power dynamic after the current members of congress are next up for re-election. Later, I'll update this post with the optimal term limits for shifting the balance of power in both the Democratic and Republican directions. 
 
 ## Current Congressional Distributions
 
