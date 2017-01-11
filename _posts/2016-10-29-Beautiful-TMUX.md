@@ -4,6 +4,7 @@ title: "Beautiful TMUX"
 date: 2016-10-29
 ---
 
+[Pretty-img]: https://github.com/jvahala/jvahala.github.io/blob/master/_posts/images/20161029/tmux-pretty.tpng?raw=true "Pretty terminal with tmux"
 [Preferences-img]: https://github.com/jvahala/jvahala.github.io/blob/master/_posts/images/20161029/tmux-terminal-preferences.png?raw=true "Preferences"
 [Themes-img]: https://github.com/jvahala/jvahala.github.io/blob/master/_posts/images/20161029/tmux-download-terminal-themes.png?raw=true "Themes"
 [Profile-img]: https://github.com/jvahala/jvahala.github.io/blob/master/_posts/images/20161029/tmux-terminal-profile-screen.png?raw=true "Profile"
@@ -16,7 +17,7 @@ In receiving a demo of a labmate's [Mico-arm](http://www.robotnik.eu/robotics-ar
 
 Tmux allows for us to quickly attach and detach to terminal sessions that can be project/contextually named. Thus, we can be working on several projects - like a homebrewing recipe generator, a human-robot-collaboration user experience improvement project, and a ranking project - without having three unique terminals running with important and easy-but-still-takes-effort-to-initialize python instances. Also, we can make it pretty. 
 
-*image of pretty* 
+![alt text][Pretty-img]{:width="600px"}
 
 In this post, I'll go through some initialization and troubleshooting fixes I went through to finally truly enjoy playing with the command line. Thanks to [Daniel Miessler](https://danielmiessler.com/study/tmux/#gs.gLmbnDs) and [Ham Vocke](http://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/) for helping me get started. See their posts for more reasons to use `tmux` over alternatives. 
 
