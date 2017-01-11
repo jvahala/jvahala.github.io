@@ -17,7 +17,9 @@ In receiving a demo of a labmate's [Mico-arm](http://www.robotnik.eu/robotics-ar
 
 Tmux allows for us to quickly attach and detach to terminal sessions that can be project/contextually named. Thus, we can be working on several projects - like a homebrewing recipe generator, a human-robot-collaboration user experience improvement project, and a ranking project - without having three unique terminals running with important and easy-but-still-takes-effort-to-initialize python instances. Also, we can make it pretty. 
 
+<p align="center">
 ![alt text][Pretty-img]{:width="400px"}
+<\p>
 
 In this post, I'll go through some initialization and troubleshooting fixes I went through to finally truly enjoy playing with the command line. Thanks to [Daniel Miessler](https://danielmiessler.com/study/tmux/#gs.gLmbnDs) and [Ham Vocke](http://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/) for helping me get started. See their posts for more reasons to use `tmux` over alternatives. 
 
@@ -100,15 +102,21 @@ To reload your config file, use `Ctrl+a r`. (This is a functionality added in .t
 ### Step 1. Choose a nice Terminal color scheme
 Open a terminal and go to Preferences
 
+<p align="center">
 ![alt text][Preferences-img]{:width="200px"}
+<\p>
 
 Which will open this window
 
+<p align="center">
 ![alt text][Profile-img]{:width="400px"}
+<\p>
 
 If you already have some nice themes installed, awesome. Otherwise, check out these premade [themes](https://github.com/lysyi3m/osx-terminal-themes). To install them, click the clone or download button and download as zip. 
 
+<p align="center">
 ![alt text][Themes-img]{:width="400px"}
+<\p>
 
 Then, go to your downloads, unzip the file, go to the schemes folder, right-click+open the theme you've eyed from examples shown on the github site and pass through the security warning to open a new terminal. Then go back to preferences and make it default. 
 
